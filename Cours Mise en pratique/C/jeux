@@ -1,0 +1,67 @@
+//  main.c
+//  jeux
+//  Created by nrv59 on 17/05/2018.
+//  Copyright © 2018 Nrv59. All rights reserved.
+//
+
+#include <stdio.h>
+#include "stdlib.h"
+#include "time.h"
+
+int main(int argc, const char * argv[])
+{
+    srand(time(NULL));
+
+    int niveau = 0;
+    int compteur1 = 0;
+    int compteur2 = 0;
+    int nombreMyster1 = 0;
+    int nombreMystere2 = 0;
+    int nombreEntrer = 0;
+    int continuer = 1;
+    int MAX = 0;
+    int MIN = 0;
+
+
+
+
+    while (niveau == 0)
+    {
+        printf("Bonjour choisi un niveaux:\nn1.Facile\nn2.Moyen\nn.3Difficile\n?");
+        scanf("%d", &niveau);
+        if (niveau <= 0 || niveau >= 4)
+        {
+            printf("Le niveau n'est pas valide!\n");
+            niveau = 0;
+        }
+    }
+
+    switch (niveau)
+    {
+    case 1:
+        printf("Niveau 1\n");
+            MAX = 100;
+            MIN = 1;
+            nombreMyster1 = (rand() % (MAX - MIN + 1)) + MIN;
+            printf("%d\n",nombreMyster1);
+            break;
+    case 2:
+        printf("Niveau 2\n");
+            MAX = 500;
+            MIN = 1;
+            nombreMyster1 = (rand() % (MAX - MIN + 1)) + MIN;
+            printf("%d\n",nombreMyster1);
+            break;
+    case 3:
+        printf("Niveau 3\n");
+            MAX = 1000;
+            MIN = 1;
+            nombreMyster1 = (rand() % (MAX - MIN + 1)) + MIN;
+            printf("%d\n",nombreMyster1);
+            break;
+    default:
+        break;
+
+    }
+    return 0;
+}

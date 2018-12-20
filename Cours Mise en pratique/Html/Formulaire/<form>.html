@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+    <form method="post" action="traitement.php">
+      <p id="loging">
+        <label for="pseudo">Pseudo:</label>
+        <input class="cellule"type="text" name="pseudo" id="pseudo" placeholder="Ex: Toto" size="30"
+        maxlength="10" autofocus>
+        <br>
+        <label for="pass">Pass:</label>
+        <input class="cellule"type="password" name="pass" id="pass" placeholder="password" size="30" maxlength="10" required >
+        <br>
+        <label for="email">Email:</label>
+        <input class="cellule"type="email" name="email" id="email" placeholder="email" size="30" />
+        <br>
+        <label for="tel">Telephone</label>
+        <input class="cellule"type="tel" name="tel" id="tel" placeholder="Telephone" size="30" maxlength="15">
+        <br>
+        <label for="url">URL:</label>
+        <input class="cellule"type="url" name="url" id="url" placeholder="url" size="30">
+        <br>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" placeholder="Age" size="30" min="18" max="99">
+        <br>
+        <label for="numderoul">Age</label>
+        <input type="range" name="numderoul" id="numderoul" placeholder="Age" min="18" max="99" size="30">
+        <br>
+        <label for="color">Couleur</label>
+        <input type="color" name="color" id="color" placeholder="Couleur" size="30">
+        <br>
+        <label for="date">Date</label>
+        <input type="date" name="date" id="date" placeholder="Date">
+        <br>
+        <label for="time">Time</label>
+        <input type="time" name="time" id="time" placeholder="Time" size="30">
+        <br>
+        <label for="week">Week</label>
+        <input type="week" name="week" id="week" placeholder="week">
+        <br>
+        <label for="month">Month</label>
+        <input type="month" name="month" id="month"placeholder="month"="">
+        <br>
+        <label for="datetime">Datetime</label>
+        <input type="datetime" name="datetime" id="datetime" placeholder="datetime">
+        <br>
+        <label for="datetime-local">Datetime-local</label>
+        <input type="datetime-local" name="datetime-local" id="datetime-local" placeholder="datetime-local">
+        <br>
+        <label for="coche">Coche</label>
+        <input type="checkbox" name="coche" id="coche">
+        <br>
+        <label for="coche1">Coche1</label>
+        <input type="checkbox" name="coche1" id="coche1" checked>
+        <br>
+        <label for="search">Recherche</label>
+        <input type="search" name="search" id="search" placeholder="Recherche">
+      </p>
+      <p>
+        Veuillez indiquer la tranche d'âge dans laquelle vous vous situez :<br />
+        <input type="radio" name="age" value="moins15" id="moins15" /> <label for="moins15">Moins de 15 ans</label><br />
+        <input type="radio" name="age" value="medium15-25" id="medium15-25" /> <label for="medium15-25">15-25 ans</label><br />
+        <input type="radio" name="age" value="medium25-40" id="medium25-40" /> <label for="medium25-40">25-40 ans</label><br />
+        <input type="radio" name="age" value="plus40" id="plus40" /> <label for="plus40">Encore plus vieux que ça ?!</label>
+      </p>
+      <p>
+       Sur quel continent habitez-vous ?<br />
+       <input type="radio" name="continent" value="europe" id="europe" /> <label for="europe">Europe</label><br />
+       <input type="radio" name="continent" value="afrique" id="afrique" /> <label for="afrique">Afrique</label><br />
+       <input type="radio" name="continent" value="asie" id="asie" /> <label for="asie">Asie</label><br />
+       <input type="radio" name="continent" value="amerique" id="amerique" /> <label for="amerique">Amérique</label><br />
+       <input type="radio" name="continent" value="australie" id="australie" /> <label for="australie">Australie</label>
+     </p>
+     <p>
+       <label for="pays">Dans quel pays habitez-vous ?</label><br />
+       <select name="pays" id="pays">
+         <option value="france" selected>France</option>
+         <option value="espagne">Espagne</option>
+         <option value="italie">Italie</option>
+         <option value="royaume-uni">Royaume-Uni</option>
+         <option value="canada">Canada</option>
+         <option value="etats-unis">États-Unis</option>
+         <option value="chine">Chine</option>
+         <option value="japon">Japon</option>
+      </select>
+      </p>
+    <p>
+    <label for="pays">Dans quel pays habitez-vous ?</label><br />
+    <select name="pays" id="pays">
+        <optgroup label="Europe">
+            <option value="france">France</option>
+            <option value="espagne">Espagne</option>
+            <option value="italie">Italie</option>
+            <option value="royaume-uni">Royaume-Uni</option>
+        </optgroup>
+        <optgroup label="Amérique">
+            <option value="canada">Canada</option>
+            <option value="etats-unis">Etats-Unis</option>
+        </optgroup>
+        <optgroup label="Asie">
+            <option value="chine">Chine</option>
+            <option value="japon">Japon</option>
+        </optgroup>
+        </select>
+      </p>
+      <p id="commit">
+        <label for="comment">Commentaire:</label>
+        <br>
+        <textarea class="cellule"name="comment" id="comment"rows="8" cols="80" maxlength="250" placeholder="Commentaire"></textarea>
+      </p>
+      <fieldset>
+      <legend>Vos coordonnées</legend> <!-- Titre du fieldset -->
+
+      <label for="nom">Quel est votre nom ?</label>
+      <input type="text" name="nom" id="nom" />
+
+      <label for="prenom">Quel est votre prénom ?</label>
+      <input type="text" name="prenom" id="prenom" />
+
+      <label for="email">Quel est votre e-mail ?</label>
+      <input type="email" name="email" id="email" />
+
+    </fieldset>
+    <fieldset>
+      <legend>Votre souhait</legend> <!-- Titre du fieldset -->
+
+      <p>
+          Faites un souhait que vous voudriez voir exaucé :
+
+          <input type="radio" name="souhait" value="riche" id="riche" /> <label for="riche">Etre riche</label>
+          <input type="radio" name="souhait" value="celebre" id="celebre" /> <label for="celebre">Etre célèbre</label>
+          <input type="radio" name="souhait" value="intelligent" id="intelligent" /> <label for="intelligent">Etre <strong>encore</strong> plus intelligent</label>
+          <input type="radio" name="souhait" value="autre" id="autre" /> <label for="autre">Autre...</label>
+      </p>
+
+      <p>
+          <label for="precisions">Si "Autre", veuillez préciser :</label>
+          <textarea name="precisions" id="precisions" cols="40" rows="4"></textarea>
+      </p>
+      </fieldset>
+      <p>
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Reset">
+        <input type="image" src="" value="Image Envoyer">
+        <input type="button" value="Bouton java">
+      </p>
+    </form>
+  </body>
+</html>

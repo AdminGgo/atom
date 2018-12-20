@@ -1,0 +1,20 @@
+#class cellule
+{
+  align-items: baseline;
+}
+placeholder
+{
+  tex
+}
+:required
+{
+    background-color: rgba(255, 128, 128);
+}
+:focus
+{
+  background-color: green;
+}
+body
+{
+  background-color: rgba(255, 255, 128, .5);
+}

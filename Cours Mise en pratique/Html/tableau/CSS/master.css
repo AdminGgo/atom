@@ -1,0 +1,21 @@
+table/*coller les bordure entre elle*/
+{
+  border-collapse: collapse;
+}
+thead, tfoot
+{
+  border: 2px solid red
+}
+
+th
+{
+  background-color: yellow;
+}
+td
+{
+  background-color: green;
+}
+td, th/*toute les cellules*/
+{
+  border: 1px solid;/*auront une bordure de 1px en noir */
+}

@@ -1,0 +1,9 @@
+td /*toute les cellules*/
+{
+  border: 1px solid black;/*auront une bordure de 1px en noir */
+}
+
+p
+{
+  color: red;
+}
